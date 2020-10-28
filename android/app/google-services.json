@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633780844184",
+    "firebase_url": "https://final-yat-project.firebaseio.com",
+    "project_id": "final-yat-project",
+    "storage_bucket": "final-yat-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633780844184:android:445e7eef1896a36e7e42ed",
+        "android_client_info": {
+          "package_name": "com.example.final_yat_project_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633780844184-opq9ffbaucn104kjt9v6117s0m87frr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvCaUydsK7ZnNJ-axq5YIJy5Q2Jv7a4fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633780844184-opq9ffbaucn104kjt9v6117s0m87frr3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
