@@ -27,7 +27,7 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor:Colors.black,
+    return Directionality(textDirection: TextDirection.rtl, child:Scaffold(backgroundColor:Colors.black,
       body: Center(
         child: Form(
             key: _formKey,
@@ -38,29 +38,62 @@ class _RegisterState extends State<Register> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    TextFormField(
+                    Container(margin:EdgeInsets.fromLTRB(0,50,0,10) ,
+                        child: TextFormField(
                       controller: _displayName,
-                      decoration: const InputDecoration(labelText: 'Full Name'),
+                      decoration: const InputDecoration(labelText: 'الاسم كامل ',enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                          borderSide: BorderSide(color: Colors.black,width: 3)
+                      )
+                          ,focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                            borderSide: BorderSide(color: Colors.black,width: 3),
+                          )
+                          ,labelStyle: TextStyle(color:Colors.black),
+
+                      ),
                       validator: (String value) {
                         if (value.isEmpty) {
                           return 'Please enter some text';
                         }
                         return null;
                       },
-                    ),
-                    TextFormField(
+                    )),Container(margin:EdgeInsets.fromLTRB(0,0,0,10) ,
+                      child:
+                        TextFormField(
                       controller: _emailController,
-                      decoration: const InputDecoration(labelText: 'Email'),
+                      decoration:const InputDecoration(labelText: ' الايميل',enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                        borderSide: BorderSide(color: Colors.black,width: 3)
+                      )
+                          ,focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                              borderSide: BorderSide(color: Colors.black,width: 3),
+                          )
+                          ,labelStyle: TextStyle(color:Colors.black)
+                      ),
+
                       validator: (String value) {
                         if (value.isEmpty) {
                           return 'Please enter some text';
                         }
                         return null;
                       },
-                    ),
+                    )),
+              Container(margin:EdgeInsets.fromLTRB(0,0,0,10) ,
+                child:
                     TextFormField(
                       controller: _passwordController,
-                      decoration: const InputDecoration(labelText: 'Password'),
+                      decoration: const InputDecoration(labelText: ' الرقم السري',enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                          borderSide: BorderSide(color: Colors.black,width: 3)
+                      )
+                          ,focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                            borderSide: BorderSide(color: Colors.black,width: 3),
+                          )
+                          ,labelStyle: TextStyle(color:Colors.black)
+                      ),
                       validator: (String value) {
                         if (value.isEmpty) {
                           return 'Please enter some text';
@@ -68,13 +101,15 @@ class _RegisterState extends State<Register> {
                         return null;
                       },
                       obscureText: true,
-                    ),
+                    )),
                     Container(height: 50,
                         width: 300,margin:EdgeInsets.fromLTRB(50,30,50,100),
-                        color:Colors.black,
+                        color:Colors.white,
                       alignment: Alignment.center,
                       child: OutlineButton(
-                        child: Text("register",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
+                        borderSide:BorderSide(color: Colors.black,width: 3) ,
+                        child: Text("تسجيل",style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold)),
+
                         onPressed: () async {
                           if (_formKey.currentState.validate()) {
                             _registerAccount();
@@ -89,7 +124,7 @@ class _RegisterState extends State<Register> {
               ),
             )),
       ),
-    );
+    ) );
   }
 
   void _registerAccount() async {

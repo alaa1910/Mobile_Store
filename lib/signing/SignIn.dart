@@ -17,7 +17,7 @@ class _SignInState extends State<SignIn> {
   final TextEditingController _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor:Colors.black,
+    return Directionality(textDirection: TextDirection.rtl, child:Scaffold(backgroundColor:Colors.black,
       key: _scaffoldKey,
       body: Builder(builder: (BuildContext context) {
         return Column(
@@ -27,7 +27,7 @@ class _SignInState extends State<SignIn> {
           ],
         );
       }),
-    );
+    ));
   }
 
   Widget withEmailPassword() {
@@ -41,39 +41,62 @@ class _SignInState extends State<SignIn> {
               children: <Widget>[
                 Container(
                   child: const Text(
-                    'Sign in with email and password',
+                    'تسجيل الدخول بالايميل و الرقم السري',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   alignment: Alignment.center,
                 ),
-                TextFormField(
+              Container(margin:EdgeInsets.fromLTRB(0,10,0,10) ,
+                child:TextFormField(
                   controller: _emailController,
-                  decoration: const InputDecoration(labelText: 'Email'),
+                  decoration: const InputDecoration(labelText: ' الايميل',enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                      borderSide: BorderSide(color: Colors.black,width: 3)
+                  )
+                      ,focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                        borderSide: BorderSide(color: Colors.black,width: 3),
+                      )
+                      ,labelStyle: TextStyle(color:Colors.black)
+                  ),
                   validator: (value) {
                     if (value.isEmpty) return 'Please enter some text';
                     return null;
                   },
-                ),
-                TextFormField(
+                )),
+                Container(margin:EdgeInsets.fromLTRB(0,0,0,5) ,
+               child: TextFormField(
                   controller: _passwordController,
-                  decoration: const InputDecoration(labelText: 'Password'),
+                 decoration: const InputDecoration(labelText: ' الرقم السري',enabledBorder: OutlineInputBorder(
+                     borderRadius: BorderRadius.all(Radius.circular(15)),
+                     borderSide: BorderSide(color: Colors.black,width: 3)
+                 )
+                     ,focusedBorder: OutlineInputBorder(
+                       borderRadius: BorderRadius.all(Radius.circular(15)),
+                       borderSide: BorderSide(color: Colors.black,width: 3),
+                     )
+                     ,labelStyle: TextStyle(color:Colors.black)
+                 ),
                   validator: (value) {
                     if (value.isEmpty) return 'Please enter some text';
                     return null;
                   },
                   obscureText: true,
-                ),
+                )),
                 Container(
                   padding: const EdgeInsets.only(top: 16.0),
                   alignment: Alignment.center,
-                  child: OutlineButton(
-                    child: Text("signing"),
-                    onPressed: () async {
-                      if (_formKey.currentState.validate()) {
-                        _signInWithEmailAndPassword();
-                        _pushPage(context, categories());
-                      }
-                    },
+                  child: SizedBox(width: 300,
+                    child: OutlineButton(
+                        borderSide:BorderSide(color: Colors.black,width: 3),
+                      child: Text("تسجيل"),
+                      onPressed: () async {
+                        if (_formKey.currentState.validate()) {
+                          _signInWithEmailAndPassword();
+                          _pushPage(context, categories());
+                        }
+                      },
+                    ),
                   ),
                 ),
               ],
