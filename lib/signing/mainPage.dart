@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+import 'mainScreen.dart';
 
-class MainPage extends StatefulWidget {
+class MainPage     extends StatefulWidget {
   final User user;
 
   const MainPage({Key key, this.user}) : super(key: key);
@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
                 onPressed: () {
                   _signOut().whenComplete(() {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => FirebaseAuthDemo()));
+                        builder: (context) => MainScreen()));
                   });
                 },
               ),
