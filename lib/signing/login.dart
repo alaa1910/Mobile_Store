@@ -26,22 +26,32 @@ class _FirebaseAuthDemoState extends State<FirebaseAuthDemo> {
           ),
           Container(height: 50,
             width: 300,margin:EdgeInsets.fromLTRB(50,50,50,5),
-            color:Colors.black,
 
-            child: OutlineButton(
-              child: Text("تسجيل الدخول",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
-              onPressed: () => _pushPage(context, SignIn()),
+
+            child: SizedBox(width: 300,
+
+              child: OutlineButton(
+
+                borderSide:BorderSide(color: Colors.black,width: 3),
+                child: Text("تسجيل الدخول",style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold)),
+                onPressed: () => _pushPage(context, SignIn()),
+              ),
             ),
             alignment: Alignment.center,
           ),
           Container(height: 50,
+
             width: 300,margin:EdgeInsets.fromLTRB(50,10,50,200),
-            color:Colors.black,
 
-            child: OutlineButton(
 
-              child: Text("انشاء حساب جديد",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
-              onPressed: () => _pushPage(context, Register()),
+            child: SizedBox(width: 300,
+              child: OutlineButton(
+
+                borderSide:BorderSide(color: Colors.black,width: 3),
+
+                child: Text("انشاء حساب جديد",style: TextStyle(color:Colors.black,fontWeight: FontWeight.bold)),
+                onPressed: () => _pushPage(context, Register()),
+              ),
             ),
 
             alignment: Alignment.center,
