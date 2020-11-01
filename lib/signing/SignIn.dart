@@ -17,7 +17,7 @@ class _SignInState extends State<SignIn> {
   final TextEditingController _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor:Colors.black,
       key: _scaffoldKey,
       body: Builder(builder: (BuildContext context) {
         return Column(

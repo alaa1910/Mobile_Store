@@ -10,8 +10,8 @@ class MyDrawer extends StatelessWidget {
 
       child: ListView (
         children: <Widget>[
-          UserAccountsDrawerHeader(accountName: Text("Alaa Ahmed\n"+"Nehal Gamal")
-            , accountEmail:Text("eng.3la2ahmed@yahoo.com\n"+"nehalgamal63@gmail.com"),
+          UserAccountsDrawerHeader(accountName: Text("Nehal Gamal")
+            , accountEmail:Text("nehalgamal63@gmail.com"),
             currentAccountPicture: CircleAvatar(child: Icon(Icons.person,color:Colors.white),backgroundColor:Colors.blueAccent),
             decoration: BoxDecoration(
                 color:Colors.red,
@@ -29,7 +29,7 @@ class MyDrawer extends StatelessWidget {
           Divider(color:Colors.black ,height:2,),
           ListTile(
             title: Text("الاقسام", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.all_out ,color:Colors.blueAccent ,size: 25 ),
+            leading: Icon(Icons.all_inbox_outlined ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
               Navigator.of(context).pushNamed('categories');
             },
@@ -53,7 +53,7 @@ class MyDrawer extends StatelessWidget {
           Divider(color:Colors.black ,height:2),
           ListTile(
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.all_inclusive ,color:Colors.blueAccent ,size: 25 ),
+            leading: Icon(Icons.logout ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
 
             },

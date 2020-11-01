@@ -1,5 +1,7 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 import 'Register.dart';
 import 'SignIn.dart';
@@ -12,28 +14,36 @@ class FirebaseAuthDemo extends StatefulWidget {
 class _FirebaseAuthDemoState extends State<FirebaseAuthDemo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("MobTech Registeration"),
+    return Scaffold(backgroundColor:Colors.white,
+      appBar: AppBar(title: Text ("مرحبا"),backgroundColor:Colors.black,centerTitle: true,
+
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: ListView (
         children: <Widget>[
-          Container(
+          Container(height: 300,
+              width: 300,margin:EdgeInsets.fromLTRB(0,0,0,5),
+              child: Image.asset("images/welcome.jpg",fit:BoxFit.cover)
+          ),
+          Container(height: 50,
+            width: 300,margin:EdgeInsets.fromLTRB(50,50,50,5),
+            color:Colors.black,
+
             child: OutlineButton(
-              child: Text("Signin"),
+              child: Text("تسجيل الدخول",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
               onPressed: () => _pushPage(context, SignIn()),
             ),
-            padding: const EdgeInsets.all(16),
             alignment: Alignment.center,
           ),
-          Container(
+          Container(height: 50,
+            width: 300,margin:EdgeInsets.fromLTRB(50,10,50,200),
+            color:Colors.black,
+
             child: OutlineButton(
-              child: Text("Register"),
+
+              child: Text("انشاء حساب جديد",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
               onPressed: () => _pushPage(context, Register()),
             ),
-            padding: const EdgeInsets.all(16),
+
             alignment: Alignment.center,
           ),
         ],

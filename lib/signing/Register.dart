@@ -27,11 +27,11 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor:Colors.black,
       body: Center(
         child: Form(
             key: _formKey,
-            child: Card(
+            child: Card(color: Colors.white,
               child: Padding(
                 padding: EdgeInsets.all(16),
                 child: Column(
@@ -69,11 +69,12 @@ class _RegisterState extends State<Register> {
                       },
                       obscureText: true,
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    Container(height: 50,
+                        width: 300,margin:EdgeInsets.fromLTRB(50,30,50,100),
+                        color:Colors.black,
                       alignment: Alignment.center,
                       child: OutlineButton(
-                        child: Text("register"),
+                        child: Text("register",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold)),
                         onPressed: () async {
                           if (_formKey.currentState.validate()) {
                             _registerAccount();

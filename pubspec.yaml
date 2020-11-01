@@ -73,6 +73,7 @@ flutter:
     - images/p5.jpg
     - images/redme.jpg
     - images/huawei.jpg
+    - images/welcome.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
