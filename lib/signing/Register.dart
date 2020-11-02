@@ -1,4 +1,5 @@
 import 'package:final_yat_project_flutter/pages/categories.dart';
+import 'package:final_yat_project_flutter/pages/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -28,10 +29,25 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Directionality(textDirection: TextDirection.rtl, child:Scaffold(backgroundColor:Colors.black,
-      body: Center(
-        child: Form(
+      body: Builder(builder: (BuildContext context) {
+        return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            withEmailPassword(),
+          ],
+        );
+      }),
+    ));
+  }
+
+
+
+
+
+  Widget withEmailPassword() {
+    return Form(
             key: _formKey,
-            child: Card(color: Colors.white,
+            child: Card(
               child: Padding(
                 padding: EdgeInsets.all(16),
                 child: Column(
@@ -103,7 +119,7 @@ class _RegisterState extends State<Register> {
                       obscureText: true,
                     )),
                     Container(height: 50,
-                        width: 300,margin:EdgeInsets.fromLTRB(50,30,50,100),
+                        width: 300,margin:EdgeInsets.fromLTRB(50,30,50,30),
                         color:Colors.white,
                       alignment: Alignment.center,
                       child: OutlineButton(
@@ -113,7 +129,7 @@ class _RegisterState extends State<Register> {
                         onPressed: () async {
                           if (_formKey.currentState.validate()) {
                             _registerAccount();
-                            _pushPage(context, categories());
+                            _pushPage(context, Home());
                           }
 
                         },
@@ -121,10 +137,8 @@ class _RegisterState extends State<Register> {
                     ),
                   ],
                 ),
-              ),
-            )),
-      ),
-    ) );
+    )) );
+
   }
 
   void _registerAccount() async {
@@ -141,8 +155,8 @@ class _RegisterState extends State<Register> {
       await user.updateProfile(displayName: _displayName.text);
       final user1 = _auth.currentUser;
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => MainPage(
-            user: user1,
+          builder: (context) => Home(
+
           )));
     } else {
       _isSuccess = false;
