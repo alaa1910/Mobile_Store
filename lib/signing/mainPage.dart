@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'mainScreen.dart';
 
-class MainPage     extends StatefulWidget {
+class MainPage extends StatefulWidget {
   final User user;
 
   const MainPage({Key key, this.user}) : super(key: key);
