@@ -17,6 +17,7 @@ class RelmiState extends State<Relmi>{
       appBar: AppBar(
         title: Text("ريلمي") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body: ListView (
         children: <Widget>[

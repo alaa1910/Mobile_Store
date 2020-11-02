@@ -38,7 +38,7 @@ class _SignInState extends State<SignIn> {
   Widget withEmailPassword() {
     return Form(
         key: _formKey,
-        child: Card(
+        child: Card(color: Colors.white,
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(

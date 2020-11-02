@@ -17,6 +17,7 @@ class IphoneState extends State<Iphone>{
       appBar: AppBar(
         title: Text("ايفون") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body:ListView (
         children: <Widget>[

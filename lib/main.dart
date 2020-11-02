@@ -1,6 +1,9 @@
 import 'package:final_yat_project_flutter/pages/Huawei.dart';
 import 'package:final_yat_project_flutter/pages/Iphone.dart';
+import 'package:final_yat_project_flutter/pages/Redmi.dart';
+import 'package:final_yat_project_flutter/pages/Relmi.dart';
 import 'package:final_yat_project_flutter/pages/oppo.dart';
+import 'package:final_yat_project_flutter/pages/samsung.dart';
 import 'package:final_yat_project_flutter/signing/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +43,19 @@ class MyApp extends StatelessWidget{
         'categories' :(context) {
           return categories();
         },
+         'login' :(context) {
+         return FirebaseAuthDemo();
       }
+      ,  'samsung' :(context) {
+          return samaung();
+        },  'Redmi' :(context) {
+          return Redmi();
+        },  'Relmi' :(context) {
+          return Relmi();
+        }
+
+
+      },
     );
   }
 

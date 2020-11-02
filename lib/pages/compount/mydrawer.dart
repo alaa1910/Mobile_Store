@@ -55,7 +55,7 @@ class MyDrawer extends StatelessWidget {
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.all_out ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
-
+              Navigator.of(context).pushNamed('login');
             },
           )
 

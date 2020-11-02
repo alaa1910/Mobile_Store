@@ -17,6 +17,7 @@ class oppoState extends State<oppo>{
       appBar: AppBar(
         title: Text("أبو") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body: ListView (
         children: <Widget>[

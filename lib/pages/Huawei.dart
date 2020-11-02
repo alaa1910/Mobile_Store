@@ -17,6 +17,7 @@ class HuaweiState extends State<Huawei>{
       appBar: AppBar(
         title: Text("هاواوي") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body:ListView (
         children: <Widget>[

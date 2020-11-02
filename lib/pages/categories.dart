@@ -16,6 +16,7 @@ class categorisState extends State<categories>{
         appBar: AppBar(
           title: Text('الاقسام'),
           centerTitle: true,
+            backgroundColor:Colors.black
         ),
         drawer: MyDrawer(),
         body: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),children: <Widget>[
