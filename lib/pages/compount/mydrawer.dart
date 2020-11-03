@@ -29,7 +29,7 @@ class MyDrawer extends StatelessWidget {
           Divider(color:Colors.black ,height:2,),
           ListTile(
             title: Text("الاقسام", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.all_inclusive ,color:Colors.blueAccent ,size: 25 ),
+            leading: Icon(Icons.all_inbox_outlined ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
               Navigator.of(context).pushNamed('categories');
             },
@@ -53,7 +53,7 @@ class MyDrawer extends StatelessWidget {
           Divider(color:Colors.black ,height:2),
           ListTile(
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.all_out ,color:Colors.blueAccent ,size: 25 ),
+            leading: Icon(Icons.logout ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
               Navigator.of(context).pushNamed('login');
             },
