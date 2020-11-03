@@ -113,7 +113,7 @@ class _RegisterState extends State<Register> {
                         onPressed: () async {
                           if (_formKey.currentState.validate()) {
                             _registerAccount();
-
+                            _pushPage(context, categories());
                           }
 
                         },
@@ -141,8 +141,8 @@ class _RegisterState extends State<Register> {
       await user.updateProfile(displayName: _displayName.text);
       final user1 = _auth.currentUser;
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => categories(
-
+          builder: (context) => MainPage(
+            user: user1,
           )));
     } else {
       _isSuccess = false;

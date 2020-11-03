@@ -17,6 +17,7 @@ class RedmiState extends State<Redmi>{
       appBar: AppBar(
         title: Text("رادمي") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body: ListView (
         children: <Widget>[

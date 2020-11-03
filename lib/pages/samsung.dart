@@ -17,6 +17,7 @@ class samaungState extends State<samaung>{
       appBar: AppBar(
         title: Text("سامسونج") ,
         centerTitle: true,
+          backgroundColor:Colors.black
       ),
       body: ListView (
         children: <Widget>[
