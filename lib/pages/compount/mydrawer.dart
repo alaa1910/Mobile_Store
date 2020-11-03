@@ -28,7 +28,7 @@ class MyDrawer extends StatelessWidget {
           ),
           Divider(color:Colors.black ,height:2,),
           ListTile(
-            title: Text("الاقسام", style: TextStyle(color: Colors.black , fontSize: 18),),
+            title: Text("الأقسام", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.all_inbox_outlined ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
               Navigator.of(context).pushNamed('categories');
