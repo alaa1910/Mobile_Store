@@ -28,7 +28,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p1.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -46,7 +46,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p2.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -64,7 +64,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p3.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -82,7 +82,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p4.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -100,7 +100,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p5.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -118,7 +118,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p6.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -136,7 +136,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p7.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -154,7 +154,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p8.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -172,7 +172,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p9.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -190,7 +190,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p10.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
@@ -208,7 +208,7 @@ class IphoneState extends State<Iphone>{
               child: Row(
 
                 children:<Widget> [
-                  Expanded(flex:1,child: Image.asset("images/download(S).jpg",fit:BoxFit.cover)),
+                  Expanded(flex:1,child: Image.asset("images/Iphone/p11.jpg",fit:BoxFit.cover)),
                   Expanded(flex:2,child:Container(padding: EdgeInsets.only(right:5),alignment: Alignment.topRight,height: 100,child:Column(crossAxisAlignment: CrossAxisAlignment.start,children: [Text("المواصفات",style: TextStyle(fontWeight: FontWeight.w800),textAlign: TextAlign.center,),
                     Row(children: [
                       Expanded(child:Text("الكاميرا :5 ميجابيت",style: TextStyle(color:Colors.grey),)),
