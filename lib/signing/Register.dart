@@ -33,7 +33,7 @@ class _RegisterState extends State<Register> {
             key: _formKey,
             child: Card(color: Colors.white,
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
