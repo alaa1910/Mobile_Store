@@ -55,6 +55,7 @@ flutter:
     - images/
     - images/huawei/
     - images/oppo/
+    - images/Iphone/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
