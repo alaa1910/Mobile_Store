@@ -1,7 +1,11 @@
 import 'package:final_yat_project_flutter/pages/Huawei.dart';
 import 'package:final_yat_project_flutter/pages/Iphone.dart';
+import 'package:final_yat_project_flutter/pages/Redmi.dart';
+import 'package:final_yat_project_flutter/pages/Relmi.dart';
 import 'package:final_yat_project_flutter/pages/oppo.dart';
-import 'package:final_yat_project_flutter/signing/login.dart';
+import 'package:final_yat_project_flutter/pages/samsung.dart';
+import 'package:final_yat_project_flutter/signing/signOut.dart';
+import 'package:final_yat_project_flutter/signing/mainScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -20,26 +24,34 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "MobTech",
-      home: FirebaseAuthDemo(),
-      routes: {
-        'categories': (context) {
-          return categories();
+      home: MainScreen(),
+        routes: {
+          'categories': (context) {
+            return categories();
+          },
+          'Homepage': (context) {
+            return Home();
+          },
+          'samsung' :(context){
+            return samaung();
+          },
+          'Oppo' :(context){
+            return oppo();
+          },
+
+        'Redmi' :(context){
+      return Redmi();
         },
-        'Homepage': (context) {
-          return Home();
-        },
-        'Iphone': (context) {
-          return Iphone();
+        'Relmi' :(context){
+          return Relmi();
         },
         'Huawei' :(context){
           return Huawei();
         },
-        'Oppo' :(context){
-          return oppo();
+        'Iphone': (context) {
+          return Iphone();
         },
-        'categories' :(context) {
-          return categories();
-        },
+
       }
     );
   }

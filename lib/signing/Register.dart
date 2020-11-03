@@ -2,7 +2,7 @@ import 'package:final_yat_project_flutter/pages/categories.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'mainPage.dart';
+import 'signOut.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -141,7 +141,7 @@ class _RegisterState extends State<Register> {
       await user.updateProfile(displayName: _displayName.text);
       final user1 = _auth.currentUser;
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => MainPage(
+          builder: (context) => SignOut(
             user: user1,
           )));
     } else {
