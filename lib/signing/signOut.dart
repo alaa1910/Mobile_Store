@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 
 import 'mainScreen.dart';
 
-class SignOut extends StatefulWidget {
+
+
+class MainPage extends StatefulWidget {
   final User user;
 
-  const SignOut({Key key, this.user}) : super(key: key);
+  const MainPage({Key key, this.user}) : super(key: key);
   @override
-  _SignOutState createState() => _SignOutState();
+  _MainPageState createState() => _MainPageState();
 }
 
-class _SignOutState extends State<SignOut> {
+class _MainPageState extends State<MainPage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   FirebaseAuth _auth = FirebaseAuth.instance;
@@ -38,7 +40,7 @@ class _SignOutState extends State<SignOut> {
                 onPressed: () {
                   _signOut().whenComplete(() {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => MainScreen()));
+                        builder: (context) => FirebaseAuthDemo()));
                   });
                 },
               ),

@@ -3,7 +3,6 @@ import 'package:final_yat_project_flutter/pages/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'signOut.dart';
 
 class SignIn extends StatefulWidget {
   @override

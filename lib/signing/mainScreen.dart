@@ -6,12 +6,12 @@ import 'package:flutter/rendering.dart';
 import 'Register.dart';
 import 'SignIn.dart';
 
-class MainScreen extends StatefulWidget {
+class FirebaseAuthDemo extends StatefulWidget {
   @override
-  _MainScreenState createState() => _MainScreenState();
+  _FirebaseAuthDemoState createState() => _FirebaseAuthDemoState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _FirebaseAuthDemoState extends State<FirebaseAuthDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor:Colors.white,
