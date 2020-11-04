@@ -58,6 +58,7 @@ flutter:
     - images/Iphone/
     - images/Relmi/
     - images/Redmi/
+    - images/samsung/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
