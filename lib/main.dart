@@ -2,6 +2,7 @@ import 'package:final_yat_project_flutter/pages/Huawei.dart';
 import 'package:final_yat_project_flutter/pages/Iphone.dart';
 import 'package:final_yat_project_flutter/pages/Redmi.dart';
 import 'package:final_yat_project_flutter/pages/Relmi.dart';
+import 'package:final_yat_project_flutter/pages/compount/about.dart';
 import 'package:final_yat_project_flutter/pages/oppo.dart';
 import 'package:final_yat_project_flutter/pages/samsung.dart';
 import 'package:final_yat_project_flutter/signing/mainScreen.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: "MobTech",
       home: FirebaseAuthDemo(),
+
       routes: {
         'categories': (context) {
           return categories();
@@ -50,11 +52,13 @@ class MyApp extends StatelessWidget{
           return samaung();
         },  'Redmi' :(context) {
           return Redmi();
-        },  'Relmi' :(context) {
-          return Relmi();
-        }
-
-
+        },
+    'about' :(context) {
+      return About();
+    },
+    //     'darkmode' :(context) {
+    //   return DarkMode();
+    // }
       },
     );
   }

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,8 +11,8 @@ class MyDrawer extends StatelessWidget {
 
       child: ListView (
         children: <Widget>[
-          UserAccountsDrawerHeader(accountName: Text("Nehal Gamal")
-            , accountEmail:Text("nehalgamal63@gmail.com"),
+          UserAccountsDrawerHeader(accountName: Text(FirebaseAuth.instance.currentUser.displayName)
+            , accountEmail:Text(FirebaseAuth.instance.currentUser.email),
             currentAccountPicture: CircleAvatar(child: Icon(Icons.person,color:Colors.white),backgroundColor:Colors.blueAccent),
             decoration: BoxDecoration(
                 color:Colors.red,
@@ -39,7 +40,7 @@ class MyDrawer extends StatelessWidget {
             title: Text("حول التطبيق", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.info ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
-
+              Navigator.of(context).pushNamed('about');
             },
           ),
           Divider(color:Colors.black ,height:2),
@@ -47,7 +48,10 @@ class MyDrawer extends StatelessWidget {
             title: Text("الاعدادات", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.settings ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
-
+              // // Navigator.push(
+              // //   context,
+              // //   MaterialPageRoute(builder: (context) => DarkMode()),
+              // );
             },
           ),
           Divider(color:Colors.black ,height:2),
@@ -55,7 +59,8 @@ class MyDrawer extends StatelessWidget {
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.logout ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
-              Navigator.of(context).pushNamed('login');
+              // Navigator.of(context).pushNamed('login');
+              Navigator.pushReplacementNamed(context, 'login');
             },
           )
 

@@ -16,6 +16,8 @@ class _FirebaseAuthDemoState extends State<FirebaseAuthDemo> {
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor:Colors.white,
       appBar: AppBar(title: Text ("مرحبا"),backgroundColor:Colors.black,centerTitle: true,
+        automaticallyImplyLeading: false,
+
 
       ),
       body: ListView (
