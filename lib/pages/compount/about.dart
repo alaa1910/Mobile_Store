@@ -2,9 +2,6 @@
 import 'package:flutter/material.dart';
 
 class About extends StatefulWidget {
-
-  static const color = const Color(0xffb26ade4);
-  final longString="We have created an application to make it easier for you to choose the best mobile suitable for your capabilities as the application provides most of the products of mobile companies at the price and also the capabilities of the mobile and the latest product for each company";
   @override
   _AboutState createState() => _AboutState();
 }
@@ -17,15 +14,14 @@ class _AboutState extends State<About> {
    
     ),
    body: Container(
-     child:
-     Column(
+     child: Column(
        children: [
          const Text.rich(
            TextSpan(style: TextStyle(color: Color(0xFFB26ade4),
            fontSize: 18),
-             text:"Description :", // default text style
+             text:"\n Description :", // default text style
              children: <TextSpan>[
-               TextSpan(text: "\nWe have created an application to make it easier for you to choose the best mobile suitable for your capabilities as the application provides most of the products of mobile companies at the price and also the capabilities of the mobile and the latest product for each company\n\n\n\n\n",
+               TextSpan(text: "We have created an application to make it easier for you to choose the best mobile suitable for your capabilities as the application provides most of the products of mobile companies at the price and also the capabilities of the mobile and the latest product for each company\n\n\n\n\n",
                  style: TextStyle(color: Colors.black26,fontWeight: FontWeight.bold,fontSize:20),),
              ],
            ),
