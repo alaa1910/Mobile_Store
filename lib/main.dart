@@ -56,6 +56,9 @@ class MyApp extends StatelessWidget{
     'about' :(context) {
       return About();
     },
+        'Relmi' :(context) {
+          return Relmi ();
+        },
     //     'darkmode' :(context) {
     //   return DarkMode();
     // }

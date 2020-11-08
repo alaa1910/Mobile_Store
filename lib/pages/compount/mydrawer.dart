@@ -43,17 +43,7 @@ class MyDrawer extends StatelessWidget {
               Navigator.of(context).pushNamed('about');
             },
           ),
-          Divider(color:Colors.black ,height:2),
-          ListTile(
-            title: Text("الاعدادات", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.settings ,color:Colors.blueAccent ,size: 25 ),
-            onTap: (){
-              // // Navigator.push(
-              // //   context,
-              // //   MaterialPageRoute(builder: (context) => DarkMode()),
-              // );
-            },
-          ),
+
           Divider(color:Colors.black ,height:2),
           ListTile(
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
