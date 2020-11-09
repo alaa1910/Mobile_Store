@@ -7,11 +7,9 @@ import 'package:final_yat_project_flutter/pages/oppo.dart';
 import 'package:final_yat_project_flutter/pages/samsung.dart';
 import 'package:final_yat_project_flutter/signing/mainScreen.dart';
 import 'package:final_yat_project_flutter/signing/splashScreen.dart';
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-
 import './pages/home.dart';
 import 'pages/categories.dart';
 
@@ -39,31 +37,31 @@ class MyApp extends StatelessWidget{
         'Iphone': (context) {
           return Iphone();
         },
-        'Huawei' :(context){
+        'Huawei': (context) {
           return Huawei();
         },
-        'Oppo' :(context){
+        'Oppo': (context) {
           return oppo();
         },
-        'categories' :(context) {
+        'categories': (context) {
           return categories();
         },
-         'login' :(context) {
-         return FirebaseAuthDemo();
-      }
-      ,  'samsung' :(context) {
+        'login': (context) {
+          return FirebaseAuthDemo();
+        }
+        , 'samsung': (context) {
           return samaung();
-        },  'Redmi' :(context) {
+        }, 'Redmi': (context) {
           return Redmi();
         },
-    'about' :(context) {
-      return About();
-    },
-    //     'darkmode' :(context) {
-    //   return DarkMode();
-    // }
-      },
-    );
+        'about': (context) {
+          return About();
+        },
+        'Relmi': (context) {
+          return Relmi();
+        },
+      }
+  );
   }
 
 }

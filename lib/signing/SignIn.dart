@@ -165,7 +165,5 @@ class _SignInState extends State<SignIn> {
     }
   }
 
-// void _signOut() async {
-//   await _auth.signOut();
-// }
+
 }

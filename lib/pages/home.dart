@@ -19,8 +19,7 @@ class HomeState extends State<Home>{
         actions:  <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: (){})
         ],
-        // leading: IconButton(icon: Icon(Icons.search), onPressed: (){}),
-        // //  titleSpacing: 60,
+
       ),
       drawer: MyDrawer(),
       body: ListView ( children:<Widget> [

@@ -1,8 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:outline_material_icons/outline_material_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:carousel_pro/carousel_pro.dart';
+
 
 class MyDrawer extends StatelessWidget {
   @override
@@ -43,24 +42,14 @@ class MyDrawer extends StatelessWidget {
               Navigator.of(context).pushNamed('about');
             },
           ),
-          Divider(color:Colors.black ,height:2),
-          ListTile(
-            title: Text("الاعدادات", style: TextStyle(color: Colors.black , fontSize: 18),),
-            leading: Icon(Icons.settings ,color:Colors.blueAccent ,size: 25 ),
-            onTap: (){
-              // // Navigator.push(
-              // //   context,
-              // //   MaterialPageRoute(builder: (context) => DarkMode()),
-              // );
-            },
-          ),
+
           Divider(color:Colors.black ,height:2),
           ListTile(
             title: Text("تسجيل الخروج", style: TextStyle(color: Colors.black , fontSize: 18),),
             leading: Icon(Icons.logout ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
-              // Navigator.of(context).pushNamed('login');
-              Navigator.pushReplacementNamed(context, 'login');
+
+              Navigator.pushReplacementNamed(context,'login');
             },
           )
 
