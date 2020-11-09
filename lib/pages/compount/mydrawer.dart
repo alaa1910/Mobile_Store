@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
             leading: Icon(Icons.logout ,color:Colors.blueAccent ,size: 25 ),
             onTap: (){
               // Navigator.of(context).pushNamed('login');
-              Navigator.pushReplacementNamed(context, 'login');
+              Navigator.pushReplacementNamed(context,'login');
             },
           )
 
